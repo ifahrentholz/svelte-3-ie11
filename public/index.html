@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Svelte app</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/bundle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <script>
+      this.customElements ||
+        document.write(
+          '<script src="//unpkg.com/document-register-element"><\x2fscript>'
+        );
+    </script>
+
+    <script defer src="/bundle.js"></script>
+  </head>
+
+  <body></body>
+</html>
